@@ -7,14 +7,14 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter String: ");
         String inString = scan.nextLine();
-        int i = 0;
+        int idxCurChar = 0;
         System.out.println("Unique Bytes: ");
-        while (i < inString.length()) {
-            char chr = inString.charAt(i);
-            if (inString.indexOf(chr) == inString.lastIndexOf(chr)) {
-                System.out.println(chr + " ");
+        while (idxCurChar < inString.length()) {
+            char curChar = inString.charAt(idxCurChar);
+            if (inString.indexOf(curChar) == inString.lastIndexOf(curChar)) {
+                System.out.println(curChar + " ");
             }
-            i++;
+            idxCurChar++;
         }
     }
 }
